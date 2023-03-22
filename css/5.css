@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+.header{
+    position: relative;
+    height: 53px;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.title{
+    position: absolute;
+    top: 17px;
+    left: 150px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+.main_menu{
+    position: absolute;
+    top: 17px;
+    right: 30px;
+}
+.main_menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.login_menu{
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+.filter_section{
+    border-bottom: 1px solid #ddd;
+    height: 53px;
+    display: flex;
+}
+.filter_deco{
+    border-right: 1px solid #ddd;
+    width: 49px;
+    text-align: center;
+    line-height: 50px;
+}
+.filter_item{
+    border-right: 1px solid #ddd;
+    text-align: center;
+    line-height: 50px;
+    width: 110px;
+    position: relative;
+}
+.filter_item img{
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+.select_box{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: absolute;
+    left: -1px;
+    flex-wrap: wrap;
+    width: 110px;
+    display: none;
+}
+.filter_item:hover .select_box{
+    display: flex;
+}
+.select_box1{
+    width: 332px;
+}
+.select_box li{
+    width: 110px;
+}
+.recruit_items_section{
+    text-align: center;
+    padding: 15px 0 50px;
+}
+.recruit_items_section .recruit_item{
+    position: relative;
+    width: 410px;
+    height: 378px;
+    vertical-align: top;
+    margin: 20px 15px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 0 30px #eee;
+}
+.recruit_items_section .recruit_item .rc_img{
+    height: 120px;
+}
+.recruit_items_section .recruit_item .rc_contents{
+    padding: 25px 30px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_title{
+    font-size: 17px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo{
+    color: #979797;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo .rc_writer{
+    margin-right: 15px;
+    max-width: 55%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo img{
+    vertical-align: middle;
+    margin-top: -5px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo .rc_comment{
+    margin-left: 10px;
+    
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo .rc_comment img{
+    margin-top: -5px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_job{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_desc{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 23px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom .rc_time{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom .rc_favorite{
+    position: absolute;
+    right: 28px;
+    top: 6px;
+}
+.recruit_items_section .recruit_item .rc_img{
+    height: 120px;
+    position: relative;
+    transition-duration: 0.2s;
+    background-position: center center;
+    background-size: 100%;
+}
+.recruit_items_section .recruit_item:hover .rc_img{
+    background-size: 110%;
+}
+.recruit_items_section .recruit_item:hover .rc_img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.recruit_items_section .recruit_item .rc_img .more_bt{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: -68px;
+    width: 136px;
+    height: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #565656;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s;
+}
+.recruit_items_section .recruit_item:hover .rc_img .more_bt{
+    opacity: 1;
+}

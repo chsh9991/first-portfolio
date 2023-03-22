@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<style>
+    .container6{
+        max-width: 1400px;
+        margin: 150px auto 0;
+        height: 720px;
+    }
+    .container6 .con6_wrap{
+        background: url(https://mall.cowaystatic.com/static/upload/product/banner/plan/3_pcattimg_org.jpg?v=041841) no-repeat;
+        height: 100%;
+    }
+    .container6 .con6_wrap .con6_txt{
+        text-align: center;
+        padding-top: 30px;
+        color: #fff;
+    }
+    .container6 .con6_wrap .con6_txt .top_txt{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .container6 .con6_wrap .con6_txt span{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .container6 .con6_wrap .con6_txt .bottom_txt{
+        margin-top: 20px;
+    }
+    .container6 .con6_wrap .con6_txt .bottom_txt a{
+        position: relative;
+        color: #00a8e3;
+    }
+    .container6 .con6_wrap .con6_txt .bottom_txt a:after{
+        content: '';
+        display: inline-block;
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+        width: 20px;
+        height: 13px;
+        position: absolute;
+        right: -22px;
+        top: 6px;
+    }
+    .container6 .item_list{
+        width: 1200px;
+        margin: 300px auto 0 ;
+        overflow: hidden;
+    }
+    .container6 .item_list ul{
+        display: flex;
+        background-color: #fff;
+        width: 250px;
+        height: 100px;
+        margin-right: 10px;
+        border-radius: 8px;
+        
+        
+    }
+    .container6 .item_list ul li{
+        background-color: #fff;
+        width: 250px;
+        height: 100px;
+        margin-right: 10px;
+        border-radius: 8px;
+        
+    }
+    .container6 .item_list ul li a{
+        display: flex;
+        align-items: center;
+        width: 400px;
+        color: #1b2529;
+    }
+    .container6 .item_list ul li a .item_img{
+        width: 100px;
+    }
+    .container6 .item_list ul li a .item_img img{
+        width: 100%;
+    }
+    .slick-dots{
+        display: none;
+    }
+</style>
+<body>
+    <div class="container6">
+        <div class="con6_wrap">
+        <div class="con6_txt">
+            <p class="top_txt">공간의 혁신, 노블 컬렉션</p>
+            <span class="contents_txt">공간의 가치를 높이는<br>프리미엄 디자인 가전의 품격을 느껴보세요</span>
+            <div class="bottom_txt"><a href="#none">자세히보기</a></div>
+        </div>
+        <div class="item_list">
+            <ul class="item_wrap">
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_3235_attimg_org.png" alt="노블 정수기 빌트인">
+                    </div>
+                        <span class="item_name">노블 정수기 빌트인</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_3239_attimg_org.png" alt="노블 정수기 세로">
+                    </div>
+                        <span class="item_name">노블 정수기 세로</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_3565_attimg_org.png" alt="노블 정수기 가로">
+                    </div>
+                        <span class="item_name">노블 정수기 가로</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_3663_attimg_org.png" alt="노블 정수기 RO">
+                    </div>
+                        <span class="item_name">노블 정수기 RO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_1834_attimg_org.png" alt="노블 공기청정기(66㎡)">
+                    </div>
+                        <span class="item_name">노블 공기청정기(66㎡)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_1802_attimg_org.png" alt="노블 공기청정기(50㎡)">
+                    </div>
+                        <span class="item_name">노블 공기청정기(50㎡)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_3434_attimg_org.png?v=291739" alt="노블 가습기 (자연기화식)">
+                    </div>
+                        <span class="item_name">노블 가습기 (자연기화식)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_2463_attimg_org.png" alt="노블 제습기">
+                    </div>
+                        <span class="item_name">노블 제습기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="item_img">
+                        <img src="https://mall.cowaystatic.com/static/upload/product/product/ID0101_20_attimg_org.png" alt="노블 공기청정기(100㎡)">
+                    </div>
+                        <span class="item_name">노블 공기청정기(100㎡)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script>
+        $('.item_wrap').slick({
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 9,
+  centerMode: true,
+  variableWidth: true
+});
+    </script>
+</body>
+</html>

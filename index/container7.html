@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<style>
+    .container7 {
+        width: 1200px;
+        margin: 150px auto 0;
+    }
+    .container7 .con7_txt{
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .container7 .con7_txt .top_txt{
+        margin-bottom: 20px;
+        color: #1b2529;
+    }
+    .container7 .con7_txt .main_txt{
+        color: #1b2529;
+        font-size: 40px;
+    }
+    .container7 .con7_txt .bottom_txt{
+        margin: 20px 0;
+    }
+    .container7 .con7_txt .bottom_txt a{
+        margin-top: 20px;
+        color: #00a8e3;
+        position: relative;
+    }
+    .container7 .con7_txt .bottom_txt a:after{
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 6px;
+        right: -15px;
+    }
+    .container7 .re_list{}
+    .container7 .re_list ul.re_wrap{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .container7 .re_list ul li.re_box{
+        margin-right: 40px;
+        width: 380px;
+        box-shadow: 0 10px 24px #ececec;
+        height: 700px;
+        border-radius: 8px;
+        transform: translateX(-213%);
+    }
+    .container7 .re_list ul li.re_box a{
+        display: flex;
+        flex-direction: column;
+    }
+    .container7 .re_list ul li.re_box a .re_img{
+        width: 100%;
+        height: 350px;
+    }
+    .container7 .re_list ul li.re_box a .re_img img{
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+    }
+    .container7 .re_list ul li.re_box a .re_txt{
+        padding: 30px 20px 20px;
+        color: #1b2529;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .top_txt{
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        height: 100px;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .con_txt{
+        color: #90a0a6;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-size: 14px;
+        height: 80px;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .con_txt .full{
+        text-overflow: ellipsis;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .prd_name{
+        color: #bec8cc;
+        margin-bottom: 20px;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .user_name{
+        color: #bec8cc;
+        margin-bottom: 20px;
+    }
+    .container7 .re_list ul li.re_box a .re_txt .star .on{
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_star1.png) no-repeat;
+        width: 18px;
+        height: 18px;
+        margin-right: 2px;
+        float: left;
+    }
+    .container7 .re_list button{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+    }
+    .container7 .re_list button{
+    border: none;
+    background-color: #1b2529;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    border-radius: 100%;
+    color: transparent;
+    opacity: 0;
+}
+.container7 .re_list ul:hover button{
+    opacity: 1;
+}
+.container7 .re_list ul button:before{
+    font-family: 'xeicon';
+    font-size: 20px;
+    color: #fff;
+    
+}
+.container7 .re_list ul button.slick-prev{
+    left: 0;
+}
+.container7 .re_list ul button.slick-prev:before{
+    content: "\e93d";
+}
+.container7 .re_list ul button.slick-next{
+    right: 0;
+}
+.container7 .re_list ul button.slick-next:before{
+    content: "\e940";
+}
+</style>
+
+<body>
+    <div class="container7">
+        <div class="con7_txt">
+            <p class="top_txt">BEST REVIEW</p>
+            <span class="main_txt">베스트 리뷰</span>
+            <div class="bottom_txt">
+                <a href="#none">베스트 리뷰 전체보기</a>
+            </div>
+        </div>
+        <div class="re_list">
+            <ul class="re_wrap">
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/10368_9761_attimg_org.jpeg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">3주정도 사용하고 있는데 너무<br>편하고 예쁘고</p>
+                            <p class="con_txt">좋아요!!!! 온수도 빨리 잘 나오고 물맛도 정말 좋습니다!!!!<br>코웨이 설치한거 정말 너무 만족해요</p>
+                            <p class="prd_name">아이콘 정수기 2</p>
+                            <p class="user_name">김*지</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/10294_9705_attimg_org.jpg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">얼음소리에 민감한데<br>반신반의하면서</p>
+                            <p class="con_txt">설치했는데 괜한걱정을했네요 시끄럽지않고<br>야간설정모드가있어서 좋네요^^ 물맛도 최고입니다</p>
+                            <p class="prd_name">아이콘 얼음정수기</p>
+                            <p class="user_name">김*선</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/10288_9699_attimg_org.jpg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">고질적인 허리통증이 있었는데</p>
+                            <p class="con_txt">매트리스사용후 거짓말처럼 사라졌읍니다<br>아주좋아요~!!!</p>
+                            <p class="prd_name">스마트 매트리스 S7</p>
+                            <p class="user_name">김*희</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/2723_2582_attimg_org.jpeg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">일단 디자인이 너무 이쁘구요<br>사용감도 아주</p>
+                            <p class="con_txt">좋아요<br>당연히 물맛도 좋습니다 최고 강추템 !</p>
+                            <p class="prd_name">아이콘 정수기2</p>
+                            <p class="user_name">김*경</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/1665_1530_attimg_org.jpg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">연수기사용은 딸아이의<br>아토피때문인데</p>
+                            <p class="con_txt">코웨이 연수기 사용은 온가족의 샤워시간을<br>즐겁게해주는것같습니다.<br>특히 점거일자와 시간약속을 잘지키는 코디님과 어떤제품을 교체한다는 친절하고 자세한 설명덕분에<em class="full"></e></p>
+                            <p class="prd_name">연수기(BB15-A)</p>
+                            <p class="user_name">신*경</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="re_box">
+                    <a href="#none">
+                        <div class="re_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/review/upload/10288_9699_attimg_org.jpg" alt="리뷰사진">
+                        </div>
+                        <div class="re_txt">
+                            <p class="top_txt">비데는 코웨이죠 살균케어기능이<br>있어</p>
+                            <p class="con_txt">깨끗하게 언제나 사용할수있고 세세하게 항목별<br>조절기능이 있어서 넘 편리하게 잘쓰고있어요<br>고장도 안나고 넘 좋아요ㅋㅋ</p>
+                            <p class="prd_name">스스로케어 비데(BAS29-C)</p>
+                            <p class="user_name">이*경</p>
+                            <ul class="star">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $('.re_wrap').slick({
+speed: 100,
+slidesToShow: 1,
+slidesToScroll: 1,
+centerMode: true,
+variableWidth: true,
+});
+</script>
+</html>

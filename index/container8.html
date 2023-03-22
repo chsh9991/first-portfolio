@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<style>
+    .container8 {
+        width: 100%;
+        background-color: #f2f4f5;
+        height: 800px;
+        margin-top: 100px;
+        border-radius: 10px;
+    }
+
+    .container8 .con8_wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container8 .con8_wrap .con8_txt {
+        text-align: center;
+        padding-top: 100px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .container8 .con8_wrap .con8_txt .top_txt {
+        margin-bottom: 20px;
+    }
+
+    .container8 .con8_wrap .con8_txt .main_txt {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .container8 .con8_wrap .con8_txt .bottom_txt a {
+        color: #00a8e3;
+        position: relative;
+    }
+
+    .container8 .con8_wrap .con8_txt .bottom_txt a:after {
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        content: '';
+        top: 6px;
+        right: -17px;
+    }
+
+    .container8 .con8_wrap .event_wrap {}
+
+    .container8 .con8_wrap .event_wrap .event_box {
+        display: flex;
+
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li {
+        margin-right: 30px;
+        transform: translateX(-100%);
+
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li a {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_img img {
+        width: 400px;
+        border-radius: 5px;
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_txt {
+        padding: 30px 15px;
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_txt .main_txt {
+        color: #1b2529;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_txt .period_txt {
+        color: #90a0a6;
+        margin-bottom: 20px;
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_txt .bottom_txt {
+        color: #1b2529;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .container8 .con8_wrap .event_wrap .event_box li .ev_txt .bottom_txt:after {
+        content: '';
+        display: block;
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt2.png)no-repeat;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 2px;
+        left: 89px;
+    }
+
+    .container8 button {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+    }
+
+    .container8 button {
+        border: none;
+        background-color: #1b2529;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 36px;
+        height: 36px;
+        font-size: 0;
+        border-radius: 100%;
+        color: transparent;
+        opacity: 0;
+    }
+
+    .container8 ul:hover button {
+        opacity: 1;
+    }
+
+    .container8 ul button:before {
+        font-family: 'xeicon';
+        font-size: 20px;
+        color: #fff;
+
+    }
+
+    .container8 ul button.slick-prev {
+        left: 0;
+    }
+
+    .container8 ul button.slick-prev:before {
+        content: "\e93d";
+    }
+
+    .container8 ul button.slick-next {
+        right: 0px;
+    }
+
+    .container8 ul button.slick-next:before {
+        content: "\e940";
+    }
+</style>
+
+<body>
+    <div class="container8">
+        <div class="con8_wrap">
+            <div class="con8_txt">
+                <p class="top_txt">BENEFITS</p>
+                <p class="main_txt">이달의 혜택</p>
+                <div class="bottom_txt"><a href="#none">혜택 전체보기</a></div>
+            </div>
+            <div class="event_wrap">
+                <ul class="event_box">
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/235_h_1_pc_attimg_org.jpg"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">오직 코웨이닷컴에서만 드리는 렌탈료<br>무료 혜택</p>
+                                <p class="period_txt">2023.02.25 ~ 2023.03.29</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/233_h_1_pc_attimg_org.jpg?v=161443"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">구매 고객님께 드리는 럭셔리 기프트</p>
+                                <p class="period_txt">2023.03.01 ~ 2023.03.31</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/234_h_1_pc_attimg_org.png"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">청정기 특별 기획전</p>
+                                <p class="period_txt">2023.03.10 ~ 2023.03.31</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/212_h_1_pc_attimg_org.jpg?v=220954"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">Coway-현대카드 M Edition3<br>렌탈료 할인 + M포인트 적립 프로모션</p>
+                                <p class="period_txt">2023.03.01 ~ 2023.03.31</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/223_h_1_pc_attimg_org.jpg?v=261434"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">비렉스 스마트 매트리스 30일 홈 체험<br>이벤트</p>
+                                <p class="period_txt">2023.02.23 ~ 2023.03.28</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="ev_img">
+                                <img src="https://mall.cowaystatic.com/static/upload/event/eventplan/236_h_1_pc_attimg_org.jpg?v=280955"
+                                    alt="이벤트사진">
+                            </div>
+                            <div class="ev_txt">
+                                <p class="main_txt">타사 가전 보상판매 프로그램</p>
+                                <p class="period_txt">2023.03.01 ~ 2023.03.29</p>
+                                <p class="bottom_txt">자세히 보기</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.event_box').slick({
+        speed: 100,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+    });
+</script>
+
+</html>

@@ -1,0 +1,231 @@
+@charset "UTF-8";
+*{
+    /* text-decoration: none;
+    list-style: none; */
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 48px;
+    padding-top: 25px;
+    font-weight: 700;
+    color: #3c3c3c;
+    border-bottom: 1px solid #efefef;
+}
+.header .logo_section{
+    position: absolute;
+    left: 30px;
+    top: 29px;
+    z-index: 5;
+    width: 105px;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .page_title{
+    position: absolute;
+    left: 170px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+    line-height: 20px;
+    margin-top: 3px;
+    color: #b1b1b1;
+}
+.header .main_menu{
+    position: absolute;
+    right: 30px;
+    margin-top: 3px;
+}
+.header .main_menu ul li{
+    margin: 0px 15px;
+    cursor: pointer;
+    display: inline-block;
+    /* line-height: 20px; */
+}
+.header .main_menu ul li.login_menu{
+    border-left: 1px solid #ddd;
+    padding-left: 30px;
+}
+.filter_section{
+    position: relative;
+    height: 53px;
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    background-color: #ffffff;
+}
+.filter_section .filter_deco{
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-right: 1px solid #efefef;
+    padding: 20px 20px;
+}
+.filter_section .filter_item{
+    width: 110px;
+    line-height: 53px;
+    font-size: 14px;
+    border-right: 1px solid #efefef;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.filter_section .filter_item .select_box{
+    position: absolute;
+    top: 52px;
+    left: -1px;
+    background-color: #fff;
+    width: 110px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    font-weight: 400;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 10;
+    /* transform: translateY(-155px);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.filter_section .filter_item:hover .select_box{
+    display: flex;
+    
+    /* transform: translateY(0);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.filter_section .filter_item .select_box.region_select_box{
+    width: 330px;
+}
+.filter_section .filter_item .select_box li{
+    width: 110px;
+}
+.filter_section .filter_item img{
+    margin-left: 7px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+.recruit_items_section{
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px 0 50px;
+}
+.recruit_items_section .recruit_item{
+    position: relative;
+    width: 410px;
+    height: 378px;
+    vertical-align: top;
+    margin: 20px 15px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 0 30px #eee;
+}
+.recruit_items_section .recruit_item .rc_img{
+    height: 120px;
+    position: relative;
+    transition-duration: 0.2s;
+    background-position: center center;
+    background-size: 100%;
+    cursor: pointer;
+    /* background-image: url(https://www.beginmate.com/img/card_sample.png); */ 
+    /*html 적용하는 인라인 방식을 사용함, .recruit_item이 여러개 가는데, 모두
+    같은 이미지로 지정하는게 아닌 다른 섬네일 이미지로 지정할 것이기 때문이다*/
+}
+.recruit_items_section .recruit_item:hover .rc_img{
+    background-size: 110%;
+}
+.recruit_items_section .recruit_item:hover .rc_img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.recruit_items_section .recruit_item .rc_img .more_bt{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: -68px;
+    width: 136px;
+    height: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #565656;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+    opacity: 0;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+}
+.recruit_items_section .recruit_item:hover .rc_img .more_bt{
+    opacity: 1;
+}
+.recruit_items_section .recruit_item .rc_contents{
+    padding: 25px 30px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_title{
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap; /*줄바꿈없음 br만 줄바꿈됨 길면 박스밖으로 나감*/
+    overflow: hidden;    /*박스밖으로 나가면 안보이게 함 */
+    text-overflow: ellipsis; /* 박스밖으로 나가면 ...(말 줄임표)됨 */
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo{
+    color: #979797;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo .rc_writer{
+    margin-right: 15px;
+    max-width: 55%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo img{
+    vertical-align: middle;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_subinfo .rc_comment img{
+    margin-top: -2px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_job{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_desc{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 5px;
+    color: #707070;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 23px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom .rc_time{
+    position: absolute;
+    top: 3px;
+    left: 30px;
+}
+.recruit_items_section .recruit_item .rc_contents .rc_bottom .rc_favorite{
+    position: absolute;
+    right: 28px;
+    top: 6px;
+    cursor: pointer;
+}

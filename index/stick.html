@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<style>
+    ul{
+        display: flex;
+    }
+    li img{
+        width: 50px;
+    }
+    .slick-arrow{
+        opacity: 0;
+    }
+</style>
+<body>
+    <div>
+    <div>
+        <ul class="autoplay">
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img5.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img7.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img3.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img5.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img2.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img6.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img2.png"></li>
+            <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/main_flow_img5.png"></li>
+        </ul>
+    </div>
+    </div>
+    <script type="text/javascript"> 
+$('.autoplay').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 800,
+});
+    </script>
+</body>
+</html>

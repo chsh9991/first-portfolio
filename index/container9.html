@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<style>
+    .container9{
+        width: 1200px;
+        margin: 150px auto 0;
+    }
+    .container9 .con9_wrap{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        height: 300px;
+    }
+    .con9_wrap .con9_txt{
+        width: 400px;
+        margin-right: 0px;
+    }
+    .con9_wrap .con9_txt .main_txt {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+    .con9_wrap .con9_txt a{
+        color: #00a8e3;
+        position: relative;
+        font-weight: bold;
+        
+    }
+    .con9_wrap .con9_txt a:after{
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 6px;
+        right: -15px;
+    }
+    .con9_wrap .con9_menu{
+        width: 770px;
+        overflow: hidden;
+    }
+    .con9_wrap .con9_menu .con9_box{
+        display: flex;
+        width: 800px;
+        overflow: hidden;
+    }
+    .con9_wrap .con9_menu .con9_box li{
+        background-color: #ddd;
+        margin-right: 15px;
+        border-radius: 10px;
+        width: 170px;
+        height: 170px;
+    }
+    .con9_wrap .con9_menu .con9_box li a{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+
+    }
+    .con9_wrap .con9_menu .con9_box li a .list_img{
+        margin-bottom: 10px;
+    }
+    .con9_wrap .con9_menu .con9_box li a .list_img img{
+        width: 35px;
+    }
+    .con9_wrap .con9_menu .con9_box li a .list_txt{
+        line-height: 1.5;
+    }
+    .container9 .bot_wrap ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container9 .bot_wrap ul li{
+        width: 1100px;
+        border: 1px solid #e8ecee;
+        border-radius: 8px;
+        padding: 50px 50px 0;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container9 .bot_wrap ul li:first-child{
+        margin-right: 50px;
+    }
+    .container9 .bot_wrap .text_wrap .main_txt{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .container9 .bot_wrap .text_wrap .con_txt{
+        margin-bottom: 20px;
+        color: #90a0a6;
+    }
+    .container9 .bot_wrap .text_wrap a{
+        background-color: black;
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        width: 60px;
+        padding: 7px;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+    .container8 button {
+    border: none;
+    background-color: #1b2529;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    border-radius: 100%;
+    color: transparent;
+    opacity: 0;
+}
+
+.container9 ul:hover button {
+    opacity: 1;
+}
+
+.container9 ul button:before {
+    font-family: 'xeicon';
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.container9 ul button.slick-prev {
+    left: -25px;
+}
+
+.container9 ul button.slick-prev:before {
+    content: "\e93d";
+}
+
+.container9 ul button.slick-next {
+    right: -25px;
+}
+
+.container9 ul button.slick-next:before {
+    content: "\e940";
+}
+</style>
+<body>
+    <div class="container9">
+        <div class="con9_wrap">
+        <div class="con9_txt">
+            <p class="main_txt">궁금하신 부분은<br>쉽고 빠르게 해결하세요</p>
+            <a href="#none">자주 찾는 질문 전체보기</a>
+        </div>
+        <div class="con9_menu">
+            <ul class="con9_box">
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/8_pc_attimg_org.png" alt="내 정보 변경">
+                        </div>
+                        <div class="list_txt">
+                            <p>내 정보를 변경하고 싶어요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/9_pc_attimg_org.png" alt="AS 접수">
+                        </div>
+                        <div class="list_txt">
+                            <p>AS를 접수하고<br>싶어요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/10_pc_attimg_org.png" alt="당월 납부금액">
+                        </div>
+                        <div class="list_txt">
+                            <p>당월 납부금액이<br>궁금해요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/11_pc_attimg_org.png" alt="주문내역">
+                        </div>
+                        <div class="list_txt">
+                            <p>주문내역을<br>확인하고 싶어요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/13_pc_attimg_org.png" alt="교환/반품">
+                        </div>
+                        <div class="list_txt">
+                            <p>교환/반품을 하고<br>싶어요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="list_img">
+                            <img src="https://mall.cowaystatic.com/static/upload/display/quick/13_pc_attimg_org.png" alt="하트서비스">
+                        </div>
+                        <div class="list_txt">
+                            <p>하트서비스 일정<br>확인하고 싶어요</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bot_wrap">
+        <ul>
+            <li>
+                <div class="text_wrap">
+                    <p class="main_txt">A/S·이전설치 신청</p>
+                    <p class="con_txt">제품수리나 이사가 필요할때 신청하세요</p>
+                    <a href="#none">바로가기</a>
+                </div>
+                <div class="bot_img">
+                    <img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/ico_qna4.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="text_wrap">
+                    <p class="main_txt">B2B</p>
+                    <p class="con_txt">비즈니스 파트너 대상 특별 혜택을 만나보세요</p>
+                    <a href="#none">바로가기</a>
+                </div>
+                <div class="bot_img">
+                    <img src="https://mall.cowaystatic.com/static/front/resources/web/images/main/ico_qna5.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+</body>
+<script>
+    $('.con9_box').slick({
+        speed: 100,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+    });
+</script>
+</html>

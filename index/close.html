@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .top_banner{
+            position: relative;
+        }
+        span{
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: 1px solid #fff;
+            position: absolute;
+            top: 10px;
+            right: 40%;
+            z-index: 0;
+            
+        }
+    </style>
+    <div class="top_banner">
+        <img src="https://mall.cowaystatic.com/static/upload/popup/139_pcattimg_org.jpg?v=071552">
+        <span class="close"></span>
+    </div>
+    <script type="text/javascript">
+        // Get all elements with class="close"
+let closebtns = document.getElementsByClassName("close");
+let i;
+
+// Loop through the elements, and hide the parent, when clicked on
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+    </script>
+</body>
+</html>

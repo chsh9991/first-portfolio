@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     input[id*=answer]{
+        display: none;
+    }
+     input[id*=answer] + label{
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 0;
+        color: #90a0a6;
+        font-weight: 700;
+        background-color: #ddd;
+        cursor: pointer;
+        position: relative;
+        margin-top: 300px;
+        width: 140px;
+        border-radius: 5px;
+        font-size: 14px;
+        height: 13px;
+        
+    }
+     input[id*=answer] + label span{
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_selectBg.png)0 0 no-repeat;
+        top: 17px;
+        right: 20px;
+        background-size: 100%;
+    }
+     input[id*=answer] + label + div{
+        max-height: 0;
+        transition: all .35s;
+        overflow: hidden;
+        background-color: #fff;
+        font-size: 13px;
+        width: 180px;
+        position: absolute;
+        bottom: 635px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+     input[id*=answer] + label + div  p{
+        display:block;
+        padding: 10px 20px;
+        height: 13px;
+        margin: 0;
+    }
+     input[id*=answer] + label + div p:hover{
+        background-color: #ddd;
+    }
+     input[id*=answer]:checked + label + div{
+        max-height: 100%;
+        border: 1px solid  #1b2529;
+        border-bottom: none;
+    }
+     input[id*=answer]:checked + label {
+        background-position:0 -30px;
+        border: 1px solid  #1b2529;
+        border-top: none;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        background-color: #fff;
+    }
+     input[id*=answer]:checked + label span{
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_up1.png)no-repeat;
+        top: 17px;
+        right: 20px;
+        background-size: 100%;
+    }
+</style>
+<body>
+    <div class="family_site">
+        <input type="checkbox" id="answer01">
+        <label for="answer01">Family site<span></span></label>
+        <div>
+            <p>기업사이트</p>
+            <p>IR Site</p>
+            <p>지속가능경영보고</p>
+            <p>환경분석센터</p>
+            <p>물맛연구소</p>
+            <p>Re:nk</p>
+            <p>올빚</p>
+            <p>헬시그루</p>
+        </div>
+    </div>
+    <!-- <input type="checkbox" id="answer02">
+        <label for="answer02">컨테츠 제목 부분<em></em></label>
+        <div><p>내용부분입니다.</p></div>
+    </div>
+    <input type="checkbox" id="answer03">
+        <label for="answer03">컨테츠 제목 부분<em></em></label>
+        <div><p>내용부분입니다.</p></div>
+    </div>
+    <input type="checkbox" id="answer04">
+        <label for="answer04">컨테츠 제목 부분<em></em></label>
+        <div><p>내용부분입니다.</p></div>
+    </div> -->
+</body>
+</html>

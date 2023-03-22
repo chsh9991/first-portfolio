@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.header{
+    position: relative;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.title{
+    position: absolute;
+    top: 15px;
+    left: 160px;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+}
+.main_menu{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.main_menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: black;
+    font-weight: 600;
+}
+.login_menu{
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+.filter_section{
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    height: 55px;
+}
+.filter_deco{
+    width: 55px;
+    border-right: 1px solid #ddd;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    
+}
+.filter_item{
+    width: 110px;
+    text-align: center;
+    line-height: 55px;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.filter_item img{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.select_box{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    width: 110px;
+    left: -1px;
+    display: none;
+    flex-wrap: wrap;
+}
+.select_box li{
+    width: 110px;
+}
+.select_box1{
+    width: 330px;
+}
+.filter_item:hover .select_box{
+    display: flex;
+}
+.recruit_items_section{
+    text-align: left;
+    max-width: 1250px;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+.recruit_item{
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 0 0 30px #eee;
+    background-color: #ffffff;
+    display: inline-block;
+}
+.rc_img{
+    width: 180px;
+    height: 200px;
+    background: url(https://www.beginmate.com/Upload/EventPoster/ijifojfoiwefioweg_Thumb.png);
+    background-size: 100%;
+    float: left;
+}
+.recruit_item .rc_contents{
+    padding: 10px;
+}
+.rc_title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    position: relative;
+    height: 150px;
+    font-weight: 700;
+}
+.rc_title span{
+    position: absolute;
+    left: 19px;
+    top: 50px;
+    font-weight: 100;
+}
+.rc_title .rc_subinfo{
+    top: 80px;
+}
+.rc_bottom{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.rc_bottom .d_day{
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    left: 180px;
+}
+.rc_bottom .rc_favorite{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

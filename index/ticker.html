@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+<script src="dist/js/ticker.min.js"></script>
+</head>
+<style>
+.js-ticker {
+  overflow: hidden;
+}
+
+.js-ticker-track {
+  white-space: nowrap;
+}
+
+.js-ticker-item {
+  white-space: normal;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+}
+
+@supports (display: flex) {
+  .js-ticker-track {
+    position: relative;
+    white-space: normal;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .js-ticker-item {
+    height: auto;
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .js-ticker.active .js-ticker-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .js-ticker.active .js-ticker-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+
+</style>
+<body>
+    <div class="speed-test" data-speed="60">
+        <div class="speed-test-item odd"></div>
+        <div class="speed-test-item even"></div>
+      </div>
+    <div class="default-ticker">
+        <div>Element 1</div>
+        <div>Element 2</div>
+        <div>Element 3</div>
+        <div>Element 4</div>
+        <div>Element 5</div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="../dist/js/ticker.js"></script><script src="./assets/demo.js"></script>
+</body>
+</html>

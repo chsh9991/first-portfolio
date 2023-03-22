@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+.container1{
+  position: relative;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+}
+.bx-controls-auto{
+  position: absolute;
+  left: 63%;
+  top: 87%;
+}
+.bx-pager{
+  position: absolute;
+  left: 38%;
+  top: 85%;
+  border-radius: 10px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+  border-radius: 0;
+  width: 80px;
+  margin: 0;
+  background-color: #fff;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:first-child{
+  
+}
+.bx-wrapper .bx-pager-item:first-child a{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.bx-wrapper .bx-pager-item:last-child a{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.bx-wrapper .bx-controls-direction a{
+  background: none;
+  text-indent: 0;
+  font-size: 0;
+  text-decoration: 0;
+  
+}
+.bx-wrapper .bx-controls-direction a:before{
+  font-family: 'xeicon';
+    color: #fff;
+    font-size: 50px;
+}
+.bx-wrapper .bx-prev{
+  left: 10%;
+}
+.bx-wrapper .bx-next{
+  right: 10%;
+}
+.bx-wrapper .bx-prev:before{
+  content: "\e93d";
+}
+.bx-wrapper .bx-next:before{
+ content: "\e940";
+}

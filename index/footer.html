@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+</head>
+<style>
+    footer{
+        margin-top: 150px;
+    }
+    footer .foot_util{
+        border-top: 1px solid #e8ecee;
+        border-bottom: 1px solid #e8ecee;
+    }
+    footer .inbox{
+        display: flex;
+        justify-content: space-between;
+        width: 1400px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    footer .inbox .left_box ul li{
+        float: left;
+        margin-right: 10px;
+                
+    }
+    footer .inbox .left_box ul li a{
+        color: #90a0a6;
+    }
+    footer .inbox .left_box ul li:nth-child(5) a{
+        font-weight: 700;
+    }
+    footer .inbox .left_box ul li a:after{
+        content: '·';
+        display: inline-block;
+        color: #90a0a6;
+        margin-left: 5px;
+    }
+    footer .f_container{
+        display: flex;
+        justify-content: space-between;
+        width: 1400px;
+        margin: 0 auto;
+        padding: 25px 5px;
+        
+    }
+    footer .f_container .con_inbox{
+        font-size: 14px;
+        overflow: hidden;
+        
+        
+    }
+    footer .f_container .con_inbox p{
+        float: left;
+        line-height: 34px;
+        color: #90a0a6;
+    }
+    footer .f_container .con_inbox p:not(.clear):after{
+        content:'|';
+        color: #90a0a6;
+        display: inline-block;
+        padding: 0 8px;
+    }
+    footer .f_container .con_inbox p.clear + p{
+        clear: both;
+    }
+    footer .f_container .con_inbox .more{
+        float: left;
+        color: #90a0a6;
+        margin-left: 15px;
+        border: 1px solid #90a0a6;
+        border-radius: 3px;
+        padding: 3px;
+        display: block;
+        margin-top: 6px;
+    }
+    footer .f_container .copyright{
+        margin-top: 18px;
+        color: #bec8cc;
+    }
+    footer .f_container .isms{
+        display: flex;
+        margin-top: 30px;
+    }
+    footer .f_container .isms ul{
+        display: flex;
+    }
+    footer .f_container .isms ul li{
+        margin-right: 25px;
+    }
+    footer .f_container .isms .tool_tip{
+        margin-top: 10px;
+        color: #90a0a6;
+    }
+    footer .f_container .isms button{
+        background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_tooTip2.png);
+        width: 15px;
+        height: 15px;
+        border: none;
+        background-size: cover;
+    }
+    footer .f_container .foot_sns_site{
+        display: flex;
+    }
+    footer .f_container .foot_sns_site a{
+        border: 1px solid #bec8cc;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 10px;
+        height: 35px;
+    }
+    footer .f_container .foot_sns_site a img{
+        width: 35px;
+    }
+</style>
+<body>
+    <footer>
+        <div class="foot_util">
+            <div class="inbox">
+                <div class="left_box">
+                    <ul>
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">English</a></li>
+                        <li><a href="#none">결산공고</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">계약/멤버십 약관</a></li>
+                        <li><a href="#none">법적고지</a></li>
+                        <li><a href="#none">이메일 무단 수집거부</a></li>
+                    </ul>
+                </div>
+                <div class="family_site">
+                    <div class="select_cstm">
+                        <button type="button">Family site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_container">
+            <div class="info">
+                <div class="con_inbox">
+                    <p>서울 지점 : 서울특별시 구로구 디지털로26길 38, G-TOWER 코웨이 15층~20층</p>
+                    <p class="clear">상호명 : 코웨이(주)</p>
+                    <p>본점 : 충남 공주시 유구읍 유구마곡사로 136-23</p>
+                    <p>대표이사 : 서장원</p>
+                    <p class="clear">대표전화 : 1588-5200(유료)</p>
+                    <p>통신판매번호 : 2005-충남공주-0021</p>
+                    <p class="clear">사업자등록번호 : 307-81-06054</p>
+                    <a href="#none" class="more">사업자 정보 확인</a>
+                    <a href="#none" class="more">KCP안전구매서비스기업</a>
+                </div>
+                <p class="copyright">COPYRIGHT COWAY CO., LTD.ALL RIGHTS RESERVED.</p>
+                <div class="isms">
+                    <ul>
+                        <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/isms_logo1.png" alt="CCM인증"></li>
+                        <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/isms_logo2.png" alt="웹어워드수상"></li>
+                        <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/isms_logo3.png" alt="DNV GL마크"></li>
+                        <li><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/isms_logo4.png" alt="ISMS"></li>
+                    </ul>
+                    <div class="tool_tip">
+						정보보호 및 개인정보보호 관리체계(ISMS-P) 인증 획득
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_sns_site">
+                <a href="#none"><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_instagram.png" alt="인스타그램"></a>
+                <a href="#none"><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_youtube.png" alt="유튜브"></a>
+                <a href="#none"><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_facebook.png" alt="페이스북"></a>
+                <a href="#none"><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_npost.png" alt="네이버포스트"></a>
+                <a href="#none"><img src="https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_twitter.png" alt="트위터"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

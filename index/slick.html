@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <style>
+        .visual{ position : relative;}
+        .visual button{ position:absolute; top:50%; z-index:10; transform:translateY(-50%); 
+            width: 71px; height: 71px; border-radius: 100%; background: rgba(0,0,0,0.5);
+        border:none; }
+        .visual button.slick-prev {left: 10%; font-size: 0; color: transparent;}
+        .visual button.slick-prev:before{content: "\e93d"; font-family: 'xeicon';}
+        .visual button.slick-next {right: 10%; font-size: 0; color: transparent;}
+        .visual button.slick-next:before{content: "\e940"; font-family: 'xeicon';}
+        .visual button:before{font-family: 'xeicon'; color: #fff; font-size: 45px;}
+    </style>
+</head>
+<body>
+    <section class="visual">
+        <div><img src="https://mall.cowaystatic.com/static/upload/product/banner/main/631_pcattimg_org.jpg"></div>
+        <div><img src="https://mall.cowaystatic.com/static/upload/product/banner/main/560_pcattimg_org.jpg"></div>
+        <div><img src="https://mall.cowaystatic.com/static/upload/product/banner/main/632_pcattimg_org.jpg"></div>
+    </section>
+    <script type="text/javascript">
+        $('.visual').slick();
+    </script>
+</body>
+</html>

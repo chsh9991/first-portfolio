@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+.container4{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 1200px;
+    margin: 120px auto 0;
+}
+.container4 .title_wrap .top_txt{
+    font-size: 15px;
+}
+.container4 .title_wrap .title_txt{
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.container4 .con4_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 140px;
+}
+.container4 .con4_box .img_box{
+    width: 850px;
+    height: 500px;
+    position: relative;
+    
+}
+.container4 .con4_box .img_box li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-transition: 0.3s;
+    border-radius: 8px;
+}
+.container4 .con4_box .img_box li.bg1{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg1.jpg);
+    opacity: 1;
+}
+.container4 .con4_box .img_box .bg2{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg2_1.jpg);
+}
+.container4 .con4_box .img_box .bg3{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg3.jpg);
+}
+.container4 .con4_box .img_box .bg4{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg4.jpg);
+}
+.container4 .con4_box .img_box .bg5{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg5.jpg);
+}
+.container4 .con4_box .txt_box li{
+    display: flex;
+}
+.container4 .con4_box .txt_box li a{
+    position: relative;
+    padding: 0 0 18px 72px;
+    font-weight: 700;
+    line-height: 1;
+    width: 285px;
+    height: 70px;
+    color: #000;
+}
+.container4 .con4_box .txt_box li.active_sub>a:after{
+    width: 430px;
+    height: 2px;
+    background-color: #1b2529;
+}
+.container4 .con4_box .txt_box li a:after{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: #e8ecee;
+    content: "";
+    transition: 0.2s;
+}
+.container4 .con4_box .txt_box li a .num_txt{
+    position: absolute;
+    left: 39px;
+    top: -3px;
+    font-size: 18px;
+    color: #bec8cc;
+    line-height: 1;
+}
+.container4 .con4_box .txt_box li a .txt_1{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.container4 .con4_box .txt_box li a .txt_2{
+    font-size: 24px;
+}
+.container4 .con4_box .txt_box li.active_sub a .txt_2 .arrow:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt4.png) no-repeat;
+    content: '';
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    left: 63%;
+    transition: 0.2s;
+}

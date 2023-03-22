@@ -1,0 +1,1699 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5em;
+}
+body{
+    color: #1b2529;
+}
+a{
+    font-weight: 500;
+}
+/* .clearfix{
+    content: '';
+    display: block;
+    clear: both;
+} */
+.contents_wrap{
+    width: 100%;
+    background-color: #ffffff;
+}
+.top_banner {
+    width: 100%;
+    background: #252525;
+    text-align: center;
+}
+.header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    height: 70px;
+    position: relative;
+    /* z-index: 1; */
+}
+.h_container{
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.logo{
+    float: left;
+    margin-right: 50px;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/ci_skyblue.png) no-repeat center center;
+    width: 100px;
+    height: 23px;
+    font-size: 0;
+    text-indent: -999px;
+}
+.main_menu{
+    float: left;
+}
+.main_menu ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 15px;
+    padding-bottom: 60px;
+}
+.main_menu ul li a{
+    color: black;
+    transition: 0.3s;
+    position: relative;
+}
+.main_menu ul li:hover .dep1{
+    color: #00a8e3;
+}
+.main_menu ul li:nth-child(6) span{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/gnd_live_icon.png) no-repeat center;
+    display: inline-block;
+    width: 44px;
+    height: 19px;
+    vertical-align: middle;
+}
+.main_menu ul li:nth-child(6):hover span{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/gnd_live_icon_on.png) no-repeat center;
+    }
+.main_menu ul li .dep1:hover{
+    color: #00a8e3;
+}
+.main_menu ul li .dep1:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #00a8e3;
+    top: 72px;
+    left: 0;
+    transition: 0.2s;
+}
+.main_menu ul li:hover a:after{
+    width: 100%;
+}
+.right_area{
+    float: right;
+    display: flex;
+    margin: 15 0 0 0px;
+    width: 500px;
+    justify-content: space-between;
+}
+.right_area .search_bar{
+    width: 320px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: -5px;
+    margin-right: 10px;
+    padding: 0 10px;
+    color: #999;
+    
+}
+.right_area .search_bar button{
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: inherit;
+    line-height: 40px;
+    background: none;
+}
+.right_area .search_bar span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    width: 250px;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.right_area .my_page{
+    margin-left: 19px;
+    position: relative;
+}
+.right_area .my_page .my_list{
+    position: absolute;
+    top: 40px;
+    left: -70px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 20px #ddd;
+    text-align: left;
+    display: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    color: #252525;
+    background-color: #ffffff;
+}
+.right_area .my_page .my_list ul li{
+    margin-top: 25px;
+}
+.right_area .my_page:hover .my_list{
+    display: block;
+    z-index: 5;
+}
+.right_area .cart{
+    margin-left: 29px;
+    position: relative;
+}
+.right_area .cart .count{
+    width: 20px;
+    height: 20px;
+    background-color: #00a8e3;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    right: -8px;
+    top: -8px;
+}
+.right_area .language{
+    margin-left: 29px;
+    position: relative;
+}
+.right_area .language .global_site{
+    position: absolute;
+    margin-top: 15px;
+    right: 0px;
+    width: 270px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: 0 0 20px #ddd;
+    padding-left: 20px;
+    border-radius: 5px;
+    opacity: 0;
+}
+.right_area .language:hover .global_site{
+    opacity: 1;
+    z-index: 5;
+}
+.right_area .language .global_site h3{
+    padding-top: 30px;
+}
+.right_area .language .global_site .close_site{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border: none;
+    background-color: #ffffff;
+}
+.right_area .language .global_site .country_list{
+    padding: 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+.right_area .language .global_site .country_list li{
+    margin-top: 20px;
+    
+}
+.right_area .language .global_site .flag img{
+    width: 15%;
+    vertical-align: middle;
+}
+.right_area .language .global_site .country{
+    margin-left: 10px;
+    
+}
+.right_area .language .global_site em{
+    color: #1b2529;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    font-size: 14px;
+}
+.right_area .language .global_site em + em{
+    padding: 0 5px;
+}
+.right_area .language .global_site em + em:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: #ddd;
+    top: 4px;
+    left: 0px;
+}
+.right_area .language .global_site .country_do{
+    margin-left: 53px;
+}
+
+/* 서브메뉴 */
+.sub_menu{
+    position: absolute;
+    width: 100%;
+    top: 72px;
+    left: 0;
+    box-shadow: 0 0 30px #ddd;
+    background-color: #ffffff;
+    opacity: 0;
+    z-index: 11;
+}
+.main_menu ul li:hover .sub_menu{
+    transition: 0.3s;
+    opacity: 1;
+    display: block;
+}
+.sub_menu .inbox_product{
+    width: 100%;
+    height: 255px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 5px 35px 0;
+    position: relative;
+    display: none;
+    transition: 0.3s;
+    /* display: none; */
+    
+}
+.main_menu ul li:hover .sub_menu .inbox_product{
+    display: block;
+}
+
+.sub_menu .inbox_product .product_list dt .img_plan:after{
+    content: '';
+    display: inline-block;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/gnb_combin_icon.png) no-repeat center;
+    width: 18px;
+    height: 19px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.sub_menu .inbox_product dl{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 4%;
+}
+.main_menu ul li:nth-child(3) .sub_menu .inbox_product dl{
+    padding-left: 4%;
+    margin-left: 2px;
+}
+.main_menu ul li:nth-child(4) .sub_menu .inbox_product dl{
+    padding-left: 4%;
+    margin-left: 5px;
+}
+.main_menu ul li:nth-child(5) .sub_menu .inbox_product dl{
+    padding-left: 4%;
+    margin-left: 100px;
+}
+.sub_menu .inbox_product dl dt{
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sub_menu .inbox_product dl dd{
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+.sub_menu .inbox_product dl dt:hover a{
+    color: #00a8e3;
+    transition: 0.4s;
+}
+.sub_menu .inbox_product dl dd:hover a{
+    color: #00a8e3;
+    transition: 0.4s;
+}
+
+/* container1 */
+.container1{
+    margin-top: 20px;
+    height: 720px;
+}
+.container1 .img_box{
+    /* background: url(https://mall.cowaystatic.com/static/upload/product/banner/main/560_pcattimg_org.jpg); */
+    position: relative;
+    width: 1920px;
+    height: 720px;
+
+}
+.container1 .img_box img{
+    border-radius: 10px;
+    width: 1920px;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+}
+.bx-controls-auto{
+  position: absolute;
+  left: 63%;
+  top: 87.5%;
+  z-index: 10;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{
+    width: 1000px;
+}
+.bx-pager{
+  position: absolute;
+  left: 38%;
+  top: 85%;
+  border-radius: 10px;
+  width: 1000px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+  border-radius: 0;
+  width: 80px;
+  margin: 0;
+  background-color: #fff;
+}
+.bx-wrapper .bx-pager-item:first-child a{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.bx-wrapper .bx-pager-item:last-child a{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.bx-wrapper .bx-controls-direction a{
+  background: none;
+  text-indent: 0;
+  font-size: 0;
+  text-decoration: 0;
+  
+}
+/* .container1 .img_box button{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    background: none;
+} */
+.bx-wrapper .bx-controls-direction a:before{
+    font-family: 'xeicon';
+      color: #fff;
+      font-size: 50px;
+  }
+  .bx-wrapper .bx-prev{
+    left: 10%;
+  }
+  .bx-wrapper .bx-next{
+    right: 10%;
+  }
+  .bx-wrapper .bx-prev:before{
+    content: "\e93d";
+  }
+  .bx-wrapper .bx-next:before{
+   content: "\e940";
+  }
+.container1 .img_box .banner_img{
+    position: relative;
+}
+.container1 .img_box .banner_img .banner_txt{
+    position: absolute;
+    z-index: 20;
+    top: 30%;
+    left: 17%;
+    color: #000;
+    font-size: 30px;
+}
+.container1 .img_box .banner_img_wt .banner_txt{
+    position: absolute;
+    z-index: 20;
+    top: 30%;
+    left: 17%;
+    color: #fff;
+    font-size: 30px;
+}
+.container1 .banner_img .banner_txt .sub_copy{
+    font-size: 20px;
+    font-weight: 400;
+}
+.container1 .banner_img .banner_txt .main_copy{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 0 28px;
+    line-height: 1.36;
+}
+.container1 .banner_img .banner_txt .banner_btn span{
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+}
+.container1 .banner_img .banner_txt .banner_btn span:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt2.png) no-repeat center center/100%;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 2px;
+    right: -15px;
+}
+.container1 .banner_img_wt .banner_txt .banner_btn span:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt5.png) no-repeat center center/100%;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 2px;
+    right: -15px;
+}
+/* container2 */
+.container2{
+    margin: 20px 0;
+    padding: 60px 0;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/content_bg1.png) no-repeat ;
+    background-size: cover;
+}
+.con2_title_wrap{
+    margin-bottom: 60px;
+}
+.container2 .con2_tit{
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+}
+.container2 .con2_box{
+    margin-bottom: 60px;
+}
+.container2 .con2_box .con2_box_list{
+    display: flex;
+    justify-content: center;
+}
+.container2 .con2_box .con2_box_list li{
+    width: 200px;
+}
+.container2 .con2_box .con2_box_list .con2_box_img{
+    width: 54px;
+    height: 54px;
+    margin-bottom: 16px; 
+}
+.container2 .con2_box .con2_box_list .con2_box_img img{
+    width: 100%;
+}
+.container2 .con2_box .con2_box_list li a{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container2 .con2_box .con2_box_list li a .con2_box_ko{
+    color: #fff;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.container2 .con2_box .con2_box_list li a .con2_box_en{
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.4;
+}
+/* container3 */
+.container3{
+    padding: 50px 0 0;
+    background-color: #f2f4f5;
+    border-radius: 10px;
+    height: 890px;
+}
+.container3 .con3_inner{
+    padding: 0 15px 30px;
+    font-size: 34px;
+    font-weight: 700;
+}
+.container3 .con3_inner .txt_wrap{
+    text-align: center;
+}
+.container3 .con3_inner .txt_wrap .accordion{
+    position: relative;
+    margin-bottom: 15px;
+}
+.container3 .con3_inner label{
+    margin-top: 10px;
+}
+.container3 .con3_inner input[id*=answer]{
+    display: none;
+}
+
+.container3 .con3_inner input[id*=answer] + label{
+        display: inline-block;
+        color: #00a8e3;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+}
+.container3 .con3_inner .accordion label em{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_down5.png) no-repeat;
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    right: -15px;
+    top: 14px;
+    margin: 0;   
+}
+.container3 .con3_inner input[id*=answer] + label + div{
+    max-height: 0;
+    transition: all .5s;
+    width: 100px;
+    font-size: 13px;
+    overflow: hidden;
+    position: absolute;
+    right: 53.3%;
+    top: 50px;
+    background-color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.container3 .con3_inner input[id*=answer02] + label + div{
+    width: 233px;
+    right: 46.3%;
+}
+.container3 .con3_inner input[id*=answer03] + label + div{
+    width: 243px;
+    right: 50.1%;
+}
+.container3 .con3_inner input[id*=answer] + label:after{
+    content: '';
+    width: 105px;
+    height: 2px;
+    background-color: #00a8e3;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+}
+.container3 .con3_inner input[id*=answer02] + label:after{
+    width: 233px;
+}
+.container3 .con3_inner input[id*=answer03] + label:after{
+    width: 243px;
+}
+.container3 .con3_inner input[id*=answer] + label + div p{
+    padding: 10px;
+    text-align: left;
+    
+}
+.container3 .con3_inner input[id*=answer] + label + div p:hover{
+    background-color: #ddd;
+}
+.container3 .con3_inner input[id*=answer]:checked + label + div{
+    max-height: 200px;
+}
+.container3 .btn_wrap{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 20px;
+}
+.container3 .btn_wrap a{
+    padding: 20px;
+    border-radius: 60px;
+    width: 150px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.container3 .btn_wrap a.white_btn{
+    color: #1b2529;
+    border: 1px solid #e5e9eb;
+    background: #fff;
+    transition: 0.5s;
+}
+.container3 .btn_wrap a.black_btn{
+    color: #fff;
+    background: #1b2529;
+    border: 1px solid #364449;
+}
+.container3 .btn_wrap a.white_btn:hover{
+    border: 1px solid #aaaaaa;
+}
+.container3 .slide_wrap{
+    margin-top: 100px;
+}
+.container3 .slide_wrap .slide_inner{
+    margin: 0 auto;
+}
+.container3 .slide_wrap .slide_inner .autoplay{
+    display: flex;
+}
+.container3 .slide_wrap .slide_inner .autoplay .slick-arrow{
+    opacity: 0;
+}
+.container3 .consulting_box{
+    background-color: #fff;
+    padding-top: 20px;
+}
+.container3 .consulting_box a img{
+    width: 100%;
+}
+/* container4 */
+.container4{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 1200px;
+    margin: 170px auto 0;
+    height: 650px;
+    position: relative;
+}
+.container4 .title_wrap{
+    margin-left: 30px;
+    position: absolute;
+    top: -95px;
+    left: 50px;
+    z-index: 10;
+    font-weight: 700;
+}
+.container4 .title_wrap .top_txt{
+    font-size: 15px;
+}
+.container4 .title_wrap .title_txt{
+    font-size: 40px;
+    line-height: 55px;
+}
+.container4 .con4_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 140px;
+}
+.container4 .con4_box .img_list{
+    width: 850px;
+    height: 530px;
+    position: relative;
+    
+}
+.container4 .con4_box .img_list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    opacity: 0;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+.container4 .con4_box .img_list li.bg1 {
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg1.jpg);
+    opacity: 1;
+}
+.container4 .con4_box .img_list li.bg2 {
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg2_1.jpg);
+}
+.container4 .con4_box .img_list .bg3{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg3.jpg);
+}
+.container4 .con4_box .img_list .bg4{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg4.jpg);
+}
+.container4 .con4_box .img_list .bg5{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg5.jpg);
+}
+.container4 .con4_box .txt_box li{
+    display: flex;
+    margin-bottom: 20px;
+}
+.container4 .con4_box .txt_box li a{
+    position: relative;
+    padding: 0 0 18px 72px;
+    font-weight: 700;
+    line-height: 1;
+    width: 285px;
+    height: 70px;
+    color: #000;
+    margin-left: 5px;
+}
+.container4 .con4_box .txt_box li.active>a:after{
+    width: 450px;
+    height: 2px;
+    background-color: #1b2529;
+}
+.container4 .con4_box .txt_box li a:after{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: #e8ecee;
+    content: "";
+    transition: 0.2s;
+}
+.container4 .con4_box .txt_box li a .num_txt{
+    position: absolute;
+    left: 39px;
+    top: -3px;
+    font-size: 18px;
+    color: #bec8cc;
+    line-height: 1;
+}
+.container4 .con4_box .txt_box li a .txt_1{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.container4 .con4_box .txt_box li a .txt_2{
+    font-size: 24px;
+}
+.container4 .con4_box .txt_box li.active a .txt_2 .arrow:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt4.png) no-repeat;
+    content: '';
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    left: 63%;
+    transition: 0.2s;
+}
+/* container5 */
+.container5 {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 120px auto 0;
+    padding: 0;
+    height: 750px;
+}
+
+.container5 .con5_txt {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container5 .con5_txt .top_txt {
+    font-size: 15px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.container5 .con5_txt .title_txt {
+    font-size: 34px;
+}
+
+.container5 .con5_cate {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.container5 .con5_cate ul {
+    display: inline-flex;
+}
+
+.container5 .con5_cate ul li{
+    margin-right: 10px;
+    background: #f2f4f5;
+    border-radius: 24px;
+    height: 50px;
+    position: relative;
+}
+
+.container5 .con5_cate ul li a{
+    color: #90a0a6;
+    padding: 20px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+}
+.container5 .con5_cate ul li:hover a{
+    font-weight: 700;
+    color: #fff;
+    
+}
+.container5 .con5_cate ul li:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    transition: width .2s ease;
+    transform: translateX(-50%);
+    border-radius: 24px;
+}
+.container5 .con5_cate ul li.cate1:hover:before{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate1.jpg)no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate2:hover:before{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate2.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate3:hover:before{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate3.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate4:hover:before{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate4.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+
+.container5 .con_5_list_wrap {
+    position: relative;
+}
+
+.container5 .con5_list_wrap ul li {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 20px;
+    padding: 12px 30px 0;
+    background-color: #f2f4f5;
+    border-radius: 8px;
+}
+
+.container5 .con5_list_wrap ul li:first-child {
+    width: 580px;
+    height: 700px;
+    margin-left: 0;
+    padding: 46px 0 0 50px;
+}
+
+.container5 .con5_list_wrap ul li:nth-child(n+4) {
+    margin-top: 20px;
+}
+.container5 .con5_list_wrap ul li:not(:first-child) a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt{
+    color: #90a0a6;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt span{
+    display: block;
+    
+}
+.container5 .con5_list_wrap .info_wrap .top_txt>span{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt .list_num{
+    font-size: 24px;
+}
+.container5 .con5_list_wrap .info_wrap .info_img{
+    width: 210px;
+    margin-left: 35px;
+}
+.container5 .con5_list_wrap .info_wrap .info_img img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap{
+    width: 280px;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap .prd_name{
+    margin-bottom: 40px;
+    color: #1b2529;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #1b2529;
+
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl{
+    margin-bottom: 20px;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl dd.rental_price{
+    color: #00a8e3;
+    font-size: 18px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt span{
+    color: #00a8e3;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt .best_txt{
+    font-size: 20px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt .list_num{
+    font-size: 35px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt p{
+    font-size: 30px;
+    color: #1b2529;
+    font-weight: 700;
+    margin: 50px 0;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt dl{
+    color: #1b2529;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt dl .rental_price{
+    color: #00a8e3;
+    font-size: 18px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_img{
+    width: 600px;
+    margin: 150px 0 0 50px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_img img{
+    width: 100%;
+}
+/* container6 */
+.container6{
+    max-width: 1400px;
+    margin: 300px auto 0;
+    height: 720px;
+}
+.container6 .con6_wrap{
+    background: url(https://mall.cowaystatic.com/static/upload/product/banner/plan/3_pcattimg_org.jpg?v=041841) no-repeat;
+    height: 100%;
+}
+.container6 .con6_wrap .con6_txt{
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+.container6 .con6_wrap .con6_txt .top_txt{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.container6 .con6_wrap .con6_txt span{
+    font-size: 18px;
+    line-height: 30px;
+}
+.container6 .con6_wrap .con6_txt .bottom_txt{
+    margin-top: 20px;
+}
+.container6 .con6_wrap .con6_txt .bottom_txt a{
+    position: relative;
+    color: #00a8e3;
+}
+.container6 .con6_wrap .con6_txt .bottom_txt a:after{
+    content: '';
+    display: inline-block;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+    width: 20px;
+    height: 13px;
+    position: absolute;
+    right: -22px;
+    top: 6px;
+}
+.container6 .item_list{
+    width: 1200px;
+    margin: 300px auto 0 ;
+    
+}
+.container6 .item_list ul{
+    width: 1200px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+.container6 .item_list ul li{
+    background-color: #fff;
+    width: 290px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transform: translateX(-155%);
+}
+.container6 .item_list ul li a{
+    display: flex;
+    align-items: center;
+    width: 290px;
+    color: #1b2529;
+    
+}
+.container6 .item_list ul li a .item_img{
+    width: 100px;
+    
+}
+.container6 .item_list ul li a .item_img img{
+    width: 100%;
+}
+.container6 .item_list ul button{
+    border: none;
+    background-color: #1b2529;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    border-radius: 100%;
+    color: transparent;
+    opacity: 0;
+}
+.container6 .item_list ul:hover button{
+    opacity: 1;
+}
+.container6 .item_list ul button:before{
+    font-family: 'xeicon';
+    font-size: 20px;
+    color: #fff;
+    
+}
+.container6 .item_list ul button.slick-prev{
+    left: 0;
+}
+.container6 .item_list ul button.slick-prev:before{
+    content: "\e93d";
+}
+.container6 .item_list ul button.slick-next{
+    right: 0;
+}
+.container6 .item_list ul button.slick-next:before{
+    content: "\e940";
+}
+/* container7 */
+.container7 {
+    width: 1200px;
+    margin: 150px auto 0;
+}
+.container7 .con7_txt{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.container7 .con7_txt .top_txt{
+    margin-bottom: 20px;
+    color: #1b2529;
+}
+.container7 .con7_txt .main_txt{
+    color: #1b2529;
+    font-size: 40px;
+}
+.container7 .con7_txt .bottom_txt{
+    margin: 20px 0;
+}
+.container7 .con7_txt .bottom_txt a{
+    margin-top: 20px;
+    color: #00a8e3;
+    position: relative;
+}
+.container7 .con7_txt .bottom_txt a:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -15px;
+}
+.container7 .re_list{}
+.container7 .re_list ul.re_wrap{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 10px 24px #ececec;
+}
+
+.container7 .re_list ul li.re_box{
+    margin-right: 40px;
+    width: 380px;
+    box-shadow: 0 10px 24px #ececec;
+    height: 700px;
+    border-radius: 8px;
+    transform: translateX(-217%);
+}
+.container7 .re_list ul li.re_box a{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.container7 .re_list ul li.re_box a .re_img{
+    width: 100%;
+    height: 350px;
+}
+.container7 .re_list ul li.re_box a .re_img img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+.container7 .re_list ul li.re_box a .re_txt{
+    padding: 30px 20px 20px;
+    color: #1b2529;
+}
+.container7 .re_list ul li.re_box a .re_txt .top_txt{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    height: 100px;
+}
+.container7 .re_list ul li.re_box a .re_txt .con_txt{
+    color: #90a0a6;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 14px;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.container7 .re_list ul li.re_box a .re_txt .prd_name{
+    color: #bec8cc;
+    margin-bottom: 20px;
+}
+.container7 .re_list ul li.re_box a .re_txt .user_name{
+    color: #bec8cc;
+    margin-bottom: 20px;
+}
+.container7 .re_list ul li.re_box a .re_txt .star .on{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_star1.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    float: left;
+}
+.container7 .re_list button{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+.container7 .re_list button{
+border: none;
+background-color: #1b2529;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 10;
+width: 36px;
+height: 36px;
+font-size: 0;
+border-radius: 100%;
+color: transparent;
+opacity: 0;
+}
+.container7 .re_list ul:hover button{
+opacity: 1;
+}
+.container7 .re_list ul button:before{
+font-family: 'xeicon';
+font-size: 20px;
+color: #fff;
+
+}
+.container7 .re_list ul button.slick-prev{
+left: 0;
+}
+.container7 .re_list ul button.slick-prev:before{
+content: "\e93d";
+}
+.container7 .re_list ul button.slick-next{
+right: 0px;
+}
+.container7 .re_list ul button.slick-next:before{
+content: "\e940";
+}
+/* container8 */
+.container8 {
+    width: 100%;
+    background-color: #f2f4f5;
+    height: 800px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.container8 .con8_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container8 .con8_wrap .con8_txt {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.container8 .con8_wrap .con8_txt .top_txt {
+    margin-bottom: 20px;
+}
+
+.container8 .con8_wrap .con8_txt .main_txt {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.container8 .con8_wrap .con8_txt .bottom_txt a {
+    color: #00a8e3;
+    position: relative;
+}
+
+.container8 .con8_wrap .con8_txt .bottom_txt a:after {
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    content: '';
+    top: 6px;
+    right: -17px;
+}
+
+.container8 .con8_wrap .event_wrap {}
+
+.container8 .con8_wrap .event_wrap .event_box {
+    display: flex;
+
+}
+
+.container8 .con8_wrap .event_wrap .event_box li {
+    margin-right: 30px;
+    transform: translateX(-100%);
+
+}
+
+.container8 .con8_wrap .event_wrap .event_box li a {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_img img {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_txt {
+    padding: 30px 15px;
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_txt .main_txt {
+    color: #1b2529;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_txt .period_txt {
+    color: #90a0a6;
+    margin-bottom: 20px;
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_txt .bottom_txt {
+    color: #1b2529;
+    font-weight: 700;
+    position: relative;
+}
+
+.container8 .con8_wrap .event_wrap .event_box li .ev_txt .bottom_txt:after {
+    content: '';
+    display: block;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt2.png)no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 89px;
+}
+
+.container8 button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.container8 button {
+    border: none;
+    background-color: #1b2529;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    border-radius: 100%;
+    color: transparent;
+    opacity: 0;
+}
+
+.container8 ul:hover button {
+    opacity: 1;
+}
+
+.container8 ul button:before {
+    font-family: 'xeicon';
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.container8 ul button.slick-prev {
+    left: -25px;
+}
+
+.container8 ul button.slick-prev:before {
+    content: "\e93d";
+}
+
+.container8 ul button.slick-next {
+    right: -25px;
+}
+
+.container8 ul button.slick-next:before {
+    content: "\e940";
+}
+/* container9 */
+.container9{
+    width: 1200px;
+    margin: 150px auto 0;
+}
+.container9 .con9_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 300px;
+}
+.con9_wrap .con9_txt{
+    width: 400px;
+    margin-right: 0px;
+}
+.con9_wrap .con9_txt .main_txt {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.con9_wrap .con9_txt a{
+    color: #00a8e3;
+    position: relative;
+    font-weight: bold;
+    
+}
+.con9_wrap .con9_txt a:after{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_btnTxt.png) no-repeat;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -15px;
+}
+.con9_wrap .con9_menu{
+    width: 770px;
+    
+}
+.con9_wrap .con9_menu .con9_box{
+    display: flex;
+    width: 800px;
+    padding: 0 40px;
+}
+.con9_wrap .con9_menu .con9_box li{
+    background-color: #ddd;
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 170px;
+    height: 170px;
+    transform: translateX(60%);
+}
+.con9_wrap .con9_menu .con9_box li a{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    color: #1b2529;
+}
+.con9_wrap .con9_menu .con9_box li a .list_img{
+    margin-bottom: 10px;
+}
+.con9_wrap .con9_menu .con9_box li a .list_img img{
+    width: 35px;
+}
+.con9_wrap .con9_menu .con9_box li a .list_txt{
+    line-height: 1.5;
+}
+.container9 .bot_wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+.container9 .bot_wrap ul li{
+    width: 1100px;
+    border: 1px solid #e8ecee;
+    border-radius: 8px;
+    padding: 50px 50px 0;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.container9 .bot_wrap ul li:first-child{
+    margin-right: 50px;
+}
+.container9 .bot_wrap .text_wrap .main_txt{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container9 .bot_wrap .text_wrap .con_txt{
+    margin-bottom: 20px;
+    color: #90a0a6;
+}
+.container9 .bot_wrap .text_wrap a{
+    background-color: black;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    width: 60px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.container9 button {
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+
+    }
+
+.container9 ul button:before {
+font-family: 'xeicon';
+font-size: 40px;
+color: #1b2529;
+
+}
+
+.container9 ul button.slick-prev {
+left: -50px;
+}
+
+.container9 ul button.slick-prev:before {
+content: "\e93d";
+}
+
+.container9 ul button.slick-next {
+right: -50px;
+}
+
+.container9 ul button.slick-next:before {
+content: "\e940";
+}
+/* footer */
+footer{
+    margin-top: 130px;
+    position: relative;
+}
+footer .foot_util{
+    border-top: 1px solid #e8ecee;
+    border-bottom: 1px solid #e8ecee;
+}
+footer .inbox{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 15px;
+}
+footer .inbox .left_box ul li{
+    float: left;
+    margin:10px 10px 0 0;
+}
+footer .inbox .left_box ul li a{
+    color: #90a0a6;
+}
+footer .inbox .left_box ul li:nth-child(5) a{
+    font-weight: 700;
+}
+footer .inbox .left_box ul li a:after{
+    content: '·';
+    display: inline-block;
+    color: #90a0a6;
+    margin-left: 5px;
+}
+footer .f_container{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 25px 5px;
+    
+}
+footer .f_container .con_inbox{
+    font-size: 13px;
+    overflow: hidden;
+    
+    
+}
+footer .f_container .con_inbox p{
+    float: left;
+    line-height: 34px;
+    color: #90a0a6;
+}
+footer .f_container .con_inbox p:not(.clear):after{
+    content:'|';
+    color: #90a0a6;
+    display: inline-block;
+    padding: 0 8px;
+}
+footer .f_container .con_inbox p.clear + p{
+    clear: both;
+}
+footer .f_container .con_inbox .more{
+    float: left;
+    color: #90a0a6;
+    margin-left: 15px;
+    border: 1px solid #90a0a6;
+    border-radius: 3px;
+    padding: 3px;
+    display: block;
+    margin-top: 6px;
+}
+footer .f_container .copyright{
+    margin-top: 18px;
+    color: #bec8cc;
+}
+footer .f_container .isms{
+    display: flex;
+    margin-top: 30px;
+}
+footer .f_container .isms ul{
+    display: flex;
+}
+footer .f_container .isms ul li{
+    margin-right: 25px;
+}
+footer .f_container .isms .tool_tip{
+    margin-top: 10px;
+    color: #90a0a6;
+}
+footer .f_container .isms button{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/ico_tooTip2.png);
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-size: cover;
+}
+footer .f_container .foot_sns_site{
+    display: flex;
+}
+footer .f_container .foot_sns_site a{
+    border: 1px solid #bec8cc;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    height: 35px;
+}
+footer .f_container .foot_sns_site a img{
+    width: 35px;
+}
+footer .family_site{
+    
+}
+input[id*=family]{
+    display: none;
+}
+input[id*=family] + label{
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 0;
+    color: #90a0a6;
+    font-weight: 700;
+    background-color: #ddd;
+    cursor: pointer;
+    position: relative;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 13px;
+    
+}
+input[id*=family] + label span{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_selectBg.png)0 0 no-repeat;
+    top: 17px;
+    right: 20px;
+    background-size: 100%;
+}
+input[id*=family] + label + .family_box{
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 13px;
+    width: 180px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+footer .family_box{
+    position: absolute;
+    bottom: 310px;
+}
+input[id*=family] + label + .family_box .fam_list{
+    display:block;
+    padding: 10px 20px;
+    height: 13px;
+    margin: 0;
+}
+input[id*=family] + label + .family_box p:hover{
+    background-color: #ddd;
+}
+input[id*=family]:checked + label + .family_box{
+    max-height: 100%;
+    border: 1px solid  #1b2529;
+    border-bottom: none;
+}
+input[id*=family]:checked + label {
+    background-position:0 -30px;
+    border: 1px solid  #1b2529;
+    border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #fff;
+}
+input[id*=family]:checked + label span{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/common/arr_up1.png)no-repeat;
+    top: 17px;
+    right: 20px;
+    background-size: 100%;
+}

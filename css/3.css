@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.header{
+    position: relative;
+    height: 65px;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    position: absolute;
+    top: 20px ;
+    left: 20px;
+}
+.title{
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+    line-height: 20px;
+    color: #ddd;
+    font-style: bold;
+    font-weight: 700;
+}
+.menu{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #000;
+    font-style: bold;
+    font-weight: 700;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.login_menu{
+    border-left: 1px solid #ddd;
+    padding-left: 18px;
+}
+.filter_mein{
+    border-bottom: 1px solid #ddd;
+    height: 53px;
+    display: flex;
+    position: relative;
+}
+.filter_logo{
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-right: 1px solid #efefef;
+    padding: 20px;
+}
+.filter_item{
+    width: 110px;
+    text-align: center;
+    line-height: 53px;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.filter_item img{
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+.select_box{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 110px;
+    left: -1px;
+    position: absolute;
+    top: 52px;
+    display: none;
+    flex-wrap: wrap;
+}
+.select_box li {
+    width: 110px;
+}
+.select_box1{
+    width: 332px;
+}
+.filter_item:hover .select_box{
+    display: flex;
+}
