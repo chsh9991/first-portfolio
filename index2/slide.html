@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .slide_wrapper{
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+        height: 100px;
+        overflow: hidden;
+    }
+    .slides{
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* width: 540px; 스크립트로 크기를잡아서 없어도됨 */
+        transition: 0.5s ease-out;
+    }
+    li{
+        float: left; /*flex 도 상관없다*/
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+    }
+    .slides li:not(:last-child){
+        margin-right: 10px;
+    }
+    .controls{
+        text-align: center;
+    }
+    .controls span{
+        background-color: #333;
+        color: #fff;
+        padding: 5px 5px;
+        margin: 0 10px;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 5%;
+    }
+    .controls span.prev{
+        left: 15%;
+    }
+    .controls span.next{
+        right: 15%;
+    }
+</style>
+<body>
+    <div class="slide_wrapper">
+        <ul class="slides">
+            <li>slide 01</li>
+            <li>slide 02</li>
+            <li>slide 03</li>
+            <li>slide 04</li>
+            <li>slide 05</li>
+            <li>slide 06</li>
+            <li>slide 07</li>
+            <li>slide 08</li>
+        </ul>
+    </div>
+    <p class="controls">
+        <span class="prev">prev</span>
+        <span class="next">next</span>
+    </p>
+    
+    <script>
+        let slides = document.querySelector('.slides')
+            slide = document.querySelectorAll('.slides li')
+            currentIdx = 0,
+            slideCount = slide.length,
+            prevBtn = document.querySelector('.prev'),
+            slideWidth = 100,
+            slideMargin = 10,
+            nextBtn = document.querySelector('.next');
+
+            slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
+
+            function moveSlide(num){
+                
+                slides.style.left = -num * 110 + 'px';
+                currentIdx = num;
+            }
+            nextBtn.addEventListener('click', function(){
+                if(currentIdx < slideCount -3){
+                    moveSlide(currentIdx + 1);
+                    console.log(currentIdx);
+                }else{
+                    moveSlide(0);
+                }
+            });
+            prevBtn.addEventListener('click', function(){
+                if(currentIdx > 0){
+                    moveSlide(currentIdx - 1);
+                }else{
+                    moveSlide(slideCount - 3);
+                }
+            });
+    </script>
+</body>
+</html>

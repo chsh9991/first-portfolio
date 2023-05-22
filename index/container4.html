@@ -16,15 +16,15 @@
             <h2 class="title_txt">스마트한 공간을 만들어 줄<br>코웨이 스토리</h2>
         </div>
         <div class="con4_box">
-            <ul class="img_box">
-                <li class="bg1 on"></li>
-                <li class="bg2 on"></li>
-                <li class="bg3 on"></li>
-                <li class="bg4 on"></li>
-                <li class="bg5 on"></li>
+            <ul class="bg_box">
+                <li class="bg1"></li>
+                <li class="bg2"></li>
+                <li class="bg3"></li>
+                <li class="bg4"></li>
+                <li class="bg5"></li>
             </ul>
             <ul class="txt_box">
-                <li class="active">
+                <li class="active ac1">
                     <a href="#none">
                         <span class="num_txt">01</span>
                         <p class="txt_1">방탄소년단이 선택한 코웨이!</p>
@@ -33,7 +33,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="active">
+                <li class="active ac2">
                     <a href="#none">
                         <span class="num_txt">02</span>
                         <p class="txt_1">관리받는 비데, 룰루!</p>
@@ -42,7 +42,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="active">
+                <li class="active ac3">
                     <a href="#none">
                         <span class="num_txt">03</span>
                         <p class="txt_1">생생하게 만나는 리얼 고객 후기</p>
@@ -51,7 +51,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="active">
+                <li class="active ac4">
                     <a href="#none">
                         <span class="num_txt">04</span>
                         <p class="txt_1">더 많은 이야기가 궁금하다면?</p>
@@ -60,7 +60,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="active">
+                <li class="active ac5">
                     <a href="#none">
                         <span class="num_txt">05</span>
                         <p class="txt_1">BED & RELAX 통합 브랜드</p>
@@ -73,13 +73,31 @@
         </div>
     </div>
     <script>
-        jQuery(function($){
+        $(function(){
+            let $images = $('.container4 .bg_box li'),
+                $over = $('.container4 .txt_box li ');
 
-  $(".txt_box>li>a").on("mouseover focus", function(){
-    $(this).parent().addClass("active_sub").siblings().removeClass('active_sub');
-    });
-}); 
-
+            $over.filter(':nth-child(1)').mouseover(function(){
+                $images.stop().css({opacity:0});
+                $images.filter('.bg1').stop().css({opacity:1});
+            });
+            $over.filter(':nth-child(2)').mouseover(function(){
+                $images.stop().css({opacity:0});
+                $images.filter('.bg2').stop().css({opacity:1});
+            });
+            $over.filter(':nth-child(3)').mouseover(function(){
+                $images.stop().css({opacity:0});
+                $images.filter('.bg3').stop().css({opacity:1});
+            });
+            $over.filter(':nth-child(4)').mouseover(function(){
+                $images.stop().css({opacity:0});
+                $images.filter('.bg4').stop().css({opacity:1});
+            });
+            $over.filter(':nth-child(5)').mouseover(function(){
+                $images.stop().css({opacity:0});
+                $images.filter('.bg5').stop().css({opacity:1});
+            });
+        });
     </script>
 </body>
 </html>

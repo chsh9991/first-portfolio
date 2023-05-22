@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .slide_wrapper {
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .slides {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* width: 540px; 스크립트로 크기를잡아서 없어도됨 */
+        
+    }
+    .slides.animated{
+        transition: 0.5s ease-out;
+    }
+
+    li {
+        float: left;
+        /*flex 도 상관없다*/
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+    }
+
+    .slides li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .controls {
+        text-align: center;
+    }
+
+    .controls span {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 5px;
+        margin: 0 10px;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 5%;
+    }
+
+    .controls span.prev {
+        left: 15%;
+    }
+
+    .controls span.next {
+        right: 15%;
+    }
+</style>
+
+<body>
+    <div class="slide_wrapper">
+        <ul class="slides animated">
+            <li>slide 01</li>
+            <li>slide 02</li>
+            <li>slide 03</li>
+            <li>slide 04</li>
+            <li>slide 05</li>
+        </ul>
+    </div>
+    <p class="controls">
+        <span class="prev">prev</span>
+        <span class="next">next</span>
+    </p>
+
+    <script>
+        let slides = document.querySelector('.slides'),
+            slide = document.querySelectorAll('.slides li'),
+            currentIdx = 0,
+            slideCount = slide.length,
+            slideWidth = 100,
+            slideMargin = 10,
+            prevBtn = document.querySelector('.prev'),
+            nextBtn = document.querySelector('.next');
+
+        makeClone();
+
+        function makeClone() {
+            for (let i = 0; i< slideCount; i++) {
+                //a.cloneNode()a 요소를 그대로 복사 , a.cloneNode(true) a요소에 자신까지 모두복사
+                let cloneSlide = slide[i].cloneNode(true);
+                cloneSlide.classList.add('clone');
+                //a.appendchild(b) - 요소뒤 추가  a는 기존 .slides b는 위에 복사한 거
+                slides.appendChild(cloneSlide);
+            }
+            for(let i = slideCount -1; i>=0; i--){
+                let cloneSlide = slide[i].cloneNode(true);
+                cloneSlide.classList.add('clone');
+                //a.prepend(b) - 요소앞 추가
+                slides.prepend(cloneSlide);
+            }
+            updateWidth();
+            setInitialPos();
+            setTimeout(function(){
+                slides.classList.add('animated');
+            },100)
+        }
+
+        function updateWidth(){
+            let currentSlides = document.querySelectorAll('.slides li');
+            let newSlideCount = currentSlides.length;
+
+            let newWidth = (slideWidth + slideMargin)*newSlideCount - slideMargin +'px';
+            slides.style.width = newWidth;
+        }
+        function setInitialPos(){
+            let initialTranslateValue = -(slideWidth + slideMargin)*slideCount;
+
+            slides.style.transform = 'translateX(' + initialTranslateValue+'px)';
+        }
+
+        nextBtn.addEventListener('click',function(){
+            moveSlide(currentIdx + 1);
+        });
+        prevBtn.addEventListener('click',function(){
+            moveSlide(currentIdx - 1);
+        });
+
+        function moveSlide(num){
+            slides.style.left = -num *(slideWidth + slideMargin) +'px';
+            currentIdx = num;
+            console.log(currentIdx, slideCount);
+            if(currentIdx == slideCount || currentIdx == -slideCount){
+                
+                setTimeout(function(){
+                    slides.classList.remove('animated');
+                slides.style.left = '0px';
+                currentIdx = 0;
+                }, 500);
+                setTimeout(function(){
+                    slides.classList.add('animated');
+                }, 600);
+            }
+        }
+    </script>
+</body>
+
+</html>
