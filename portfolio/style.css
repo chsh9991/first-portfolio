@@ -665,25 +665,36 @@ a{
 }
 /* container4 */
 .container4{
-    width: 100%;
-    max-width: 1400px;
-    min-width: 1200px;
+    width: 1400px;
     margin: 120px auto 0;
+    height: 700px;
+    position: relative;
+}
+.container4 .title_wrap{
+    position: absolute;
+    z-index: 1;
+    left: 100px;
 }
 .container4 .title_wrap .top_txt{
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 700;
 }
 .container4 .title_wrap .title_txt{
-    margin-top: 20px;
-    font-size: 30px;
-    line-height: 45px;
+    margin-top: 10px;
+    font-size: 35px;
+    line-height: 50px;
     font-weight: 700;
+}
+.con4_box_wrap{
+    position: relative;
 }
 .container4 .con4_box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 60px 0 140px;
+    position: absolute;
+    top: 110px;
 }
 .container4 .con4_box .bg_box{
     width: 850px;
@@ -708,22 +719,27 @@ a{
 .container4 .con4_box .bg_box li.bg1{
     background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg1.jpg);
     opacity: 1;
+    text-indent: -9999px;
 }
 .container4 .con4_box .bg_box .bg2{
     background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg2_1.jpg);
     opacity: 0;
+    text-indent: -9999px;
 }
 .container4 .con4_box .bg_box .bg3{
     background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg3.jpg);
     opacity: 0;
+    text-indent: -9999px;
 }
 .container4 .con4_box .bg_box .bg4{
     background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg4.jpg);
     opacity: 0;
+    text-indent: -9999px;
 }
 .container4 .con4_box .bg_box .bg5{
     background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/main_story_bg5.jpg);
     opacity: 0;
+    text-indent: -9999px;
 }
 .container4 .con4_box .txt_box li{
     display: flex;
@@ -847,23 +863,23 @@ a{
     transform: translateX(-50%);
     border-radius: 24px;
 }
-.container5 .con5_cate ul li.cate1:hover:before{
-    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate1.jpg)no-repeat center center ;
+.container5 .con5_cate ul li.cate1:checked:before{
+    background: url(/images/con5-0-1.jpg)no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate2:hover:before{
-    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate2.jpg) no-repeat center center ;
+    background: url(/images/con5-0-2.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate3:hover:before{
-    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate3.jpg) no-repeat center center ;
+    background: url(/images/con5-0-3.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate4:hover:before{
-    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate4.jpg) no-repeat center center ;
+    background: url(/images/con5-0-4.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
@@ -981,6 +997,10 @@ a{
 }
 .container5 .con5_list_wrap ul li:first-child a .info_img img{
     width: 100%;
+}
+
+.container5 .con5_list_wrap ul li a:not(.con5_l1){
+    display: none;
 }
 /* container6 */
 .container6{

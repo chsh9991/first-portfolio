@@ -54,6 +54,33 @@ $('.item_wrap').slick({
   });
 
  //5
+ $(function(){
+    let $clicks = $('.container5 .con5_cate ul li'),
+        $images = $('.container5 .con5_list_wrap ul li a');
+        
+        // $clicks.each(function(idx){
+        //     console.log(idx);
+        // });
+
+    $clicks.filter(':first-child').click(function(){
+        $images.css({display:'none'});
+        $images.filter('.con5_l1').css({display:'flex'});
+    });
+    $clicks.filter(':nth-child(2)').click(function(){
+        $images.css({display:'none'});
+        $images.filter('.con5_l2').css({display:'flex'});
+    });
+    $clicks.filter(':nth-child(3)').click(function(){
+        $images.css({display:'none'});
+        $images.filter('.con5_l3').css({display:'flex'});
+    });
+    $clicks.filter(':nth-child(4)').click(function(){
+        $images.css({display:'none'});
+        $images.filter('.con5_l4').css({display:'flex'});
+        $clicks.filter(':nth-child(4)').css({});
+    });
+});
+//6
  $('.re_wrap').slick({
     speed: 100,
     slidesToShow: 1,
@@ -61,7 +88,7 @@ $('.item_wrap').slick({
     centerMode: true,
     variableWidth: true,
     });
-//6
+//7
 $('.event_box').slick({
     speed: 100,
     slidesToShow: 1,
@@ -69,7 +96,7 @@ $('.event_box').slick({
     centerMode: true,
     variableWidth: true,
 });
-//7
+//8
 $('.con9_box').slick({
     speed: 100,
     slidesToShow: 1,

@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+.container5 {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 120px auto 0;
+    padding: 0;
+    height: 750px;
+}
+
+.container5 .con5_txt {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container5 .con5_txt .top_txt {
+    font-size: 15px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.container5 .con5_txt .title_txt {
+    font-size: 34px;
+}
+
+.container5 .con5_cate {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.container5 .con5_cate ul {
+    display: inline-flex;
+}
+
+.container5 .con5_cate ul li{
+    margin-right: 10px;
+    background: #f2f4f5;
+    border-radius: 24px;
+    height: 50px;
+    position: relative;
+}
+
+.container5 .con5_cate ul li a{
+    color: #90a0a6;
+    padding: 20px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+}
+.container5 .con5_cate ul li:hover a{
+    font-weight: 700;
+    color: #fff;
+    
+}
+.container5 .con5_cate ul li:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    transition: width .2s ease;
+    transform: translateX(-50%);
+    border-radius: 24px;
+}
+.container5 .con5_cate ul li.cate1:checked:before{
+    background: url(/images/con5-0-1.jpg)no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate2:hover:before{
+    background: url(/images/con5-0-2.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate3:hover:before{
+    background: url(/images/con5-0-3.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+.container5 .con5_cate ul li.cate4:hover:before{
+    background: url(/images/con5-0-4.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 101%;
+}
+
+.container5 .con_5_list_wrap {
+    position: relative;
+}
+
+.container5 .con5_list_wrap ul li {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 20px;
+    padding: 12px 30px 0;
+    background-color: #f2f4f5;
+    border-radius: 8px;
+}
+
+.container5 .con5_list_wrap ul li:first-child {
+    width: 580px;
+    height: 700px;
+    margin-left: 0;
+    padding: 46px 0 0 50px;
+}
+
+.container5 .con5_list_wrap ul li:nth-child(n+4) {
+    margin-top: 20px;
+}
+.container5 .con5_list_wrap ul li:not(:first-child) a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt{
+    color: #90a0a6;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt span{
+    display: block;
+    
+}
+.container5 .con5_list_wrap .info_wrap .top_txt>span{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.container5 .con5_list_wrap .info_wrap .top_txt .list_num{
+    font-size: 24px;
+}
+.container5 .con5_list_wrap .info_wrap .info_img{
+    width: 210px;
+    margin-left: 35px;
+}
+.container5 .con5_list_wrap .info_wrap .info_img img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap{
+    width: 280px;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap .prd_name{
+    margin-bottom: 40px;
+    color: #1b2529;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #1b2529;
+
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl{
+    margin-bottom: 20px;
+}
+.container5 .con5_list_wrap .info_wrap .price_wrap dl dd.rental_price{
+    color: #00a8e3;
+    font-size: 18px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt span{
+    color: #00a8e3;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt .best_txt{
+    font-size: 20px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt .list_num{
+    font-size: 35px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt p{
+    font-size: 30px;
+    color: #1b2529;
+    font-weight: 700;
+    margin: 50px 0;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt dl{
+    color: #1b2529;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_wrap .top_txt dl .rental_price{
+    color: #00a8e3;
+    font-size: 18px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_img{
+    width: 600px;
+    margin: 150px 0 0 50px;
+}
+.container5 .con5_list_wrap ul li:first-child a .info_img img{
+    width: 100%;
+}
+
+.container5 .con5_list_wrap ul li a:not(.con5_l1){
+    display: none;
+}
