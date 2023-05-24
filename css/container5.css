@@ -50,7 +50,8 @@
     z-index: 2;
     position: relative;
 }
-.container5 .con5_cate ul li:hover a{
+.container5 .con5_cate ul li:hover a,
+.container5 .con5_cate ul li.active a{
     font-weight: 700;
     color: #fff;
     
@@ -67,7 +68,8 @@
     transform: translateX(-50%);
     border-radius: 24px;
 }
-.container5 .con5_cate ul li.cate1:checked:before{
+.container5 .con5_cate ul li.cate1:hover:before,
+.container5 .con5_cate ul li.active:before{
     background: url(/images/con5-0-1.jpg)no-repeat center center ;
     background-size: cover;
     width: 101%;
