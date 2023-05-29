@@ -58,9 +58,6 @@ $('.item_wrap').slick({
     let $clicks = $('.container5 .con5_cate ul li'),
         $images = $('.container5 .con5_list_wrap ul li a');
         
-        // $clicks.each(function(idx){
-        //     console.log(idx);
-        // });
 
     $clicks.filter(':first-child').click(function(){
         $images.css({display:'none'});

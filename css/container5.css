@@ -68,13 +68,14 @@
     transform: translateX(-50%);
     border-radius: 24px;
 }
-.container5 .con5_cate ul li.cate1:hover:before,
-.container5 .con5_cate ul li.active:before{
+.container5 .con5_cate ul li.cate1:hover:before
+{
     background: url(/images/con5-0-1.jpg)no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
-.container5 .con5_cate ul li.cate2:hover:before{
+.container5 .con5_cate ul li.cate2:hover:before,
+.container5 .con5_cate ul li.active:before{
     background: url(/images/con5-0-2.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;

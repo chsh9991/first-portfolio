@@ -863,23 +863,23 @@ a{
     transform: translateX(-50%);
     border-radius: 24px;
 }
-.container5 .con5_cate ul li.cate1:checked:before{
-    background: url(/images/con5-0-1.jpg)no-repeat center center ;
+.container5 .con5_cate ul li.cate1:hover:before{
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate1.jpg)no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate2:hover:before{
-    background: url(/images/con5-0-2.jpg) no-repeat center center ;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate4.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate3:hover:before{
-    background: url(/images/con5-0-3.jpg) no-repeat center center ;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate2.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }
 .container5 .con5_cate ul li.cate4:hover:before{
-    background: url(/images/con5-0-4.jpg) no-repeat center center ;
+    background: url(https://mall.cowaystatic.com/static/front/resources/web/images/main/cate3.jpg) no-repeat center center ;
     background-size: cover;
     width: 101%;
 }

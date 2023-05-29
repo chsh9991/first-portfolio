@@ -506,23 +506,19 @@
     //     });
     // });
     $(function(){
-        let $cate = $('.container5 .con5_cate ul li'),
-            $plist = $('.container5 .con5_list_wrap ul a');
+        let $cate = $('.container5 .con5_cate ul li a'),
+            $plist = $('.container5 .con5_list_wrap ul li a');
         
-        $cate.click(function(e){
-            e.preventDefault();
-        
-        let $idx = $cate.index(this);
-        console.log($idx);
+            $cate.click(function(e){
+                e.preventDefault();
 
-            $cate.removeClass('active');
-            $(this).addClass('active');
-
-            let $target = $(this).attr('href');
-            $plist.hide();
-            $($target).css({display:'flex'});
-            
+                $cate.removeClass('active');
+                $(this).addClass('active');
+                
+                let $target =$(this).attr('href');
+                $plist.hide();
+                $($target).show();
+            });
         });
-    });
 </script>
 </html>
